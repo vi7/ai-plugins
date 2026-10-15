@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Vitaliy Dmitriev"
+  },
+  "description": "Technical editor for authentic DevOps, infrastructure, and AI automation articles.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Creativity",
+        "defaultPrompt": [],
+        "developerName": "Vitaliy Dmitriev",
+        "displayName": "Dev.to Article Editor",
+        "longDescription": "Technical editor for authentic DevOps, infrastructure, and AI automation articles.",
+        "shortDescription": "Technical editor for authentic DevOps, infrastructure, and AI automation articles."
+      }
+    }
+  },
+  "name": "gpt-efadad0780cb743252fc5f649f23bd01",
+  "version": "0.1.3"
+}
