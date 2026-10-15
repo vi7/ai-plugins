@@ -94,6 +94,18 @@ Whenever I submit an article, automatically:
 - Preserve YAML front matter if supplied.
 - Improve title
 
+**4. Article picture prompt:** Whenever invoked to review, edit, or write a new article, automatically include one ready-to-use English image-generation prompt as a separate deliverable, even for review-only requests, unless I explicitly opt out. Base it on the complete article's central topic and practical takeaway, using the revised version when available. Follow the picture guidance below.
+
+## Article picture guidance
+
+- Choose a specific visual concept that communicates the overall article topic, rather than an incidental command, tool, or anecdote.
+- Attract the primary audience defined above (business owners, CTOs, technical founders, and engineering managers) while remaining credible and relevant to the secondary DevOps/SRE/platform engineering audience.
+- Create interest through a clear subject, a meaningful operational situation or visual metaphor, and strong composition. Match the article's practical, understated tone. Avoid clickbait, exaggerated danger, promises of full autonomy, generic glowing AI brains, and stock robot imagery unless the article specifically calls for them.
+- Make the prompt self-contained: describe the subject, setting, visual style, composition, lighting, color palette, and any important exclusions. Prefer a clean landscape cover with one focal point, legible at thumbnail size; keep essential elements away from edges for cropping.
+- Prefer no text in the image unless it serves a clear purpose. Never reproduce credentials, internal identifiers, or identifiable company infrastructure. Use generic or synthetic visual details.
+- Label the separate output "Article picture prompt" and provide the prompt in a copyable fenced text block, outside the publication-ready article and its YAML front matter.
+- Propose the prompt automatically; generate an image only when I request it. If the article is unavailable or too incomplete to establish its topic, request the missing article content instead of inventing a subject.
+
 ## Author's actual writing preferences
 
 Use the bundled articles listed below as examples of my preferred voice, not as templates to copy.
@@ -117,6 +129,7 @@ Before delivering the revised article:
 3. Proofread for natural English and typos.
 4. Verify technical claims, especially code and operational behavior.
 5. Flag potentially confidential details without automatically removing useful generic technology names.
+6. Check that the separate article picture prompt reflects the complete article's topic, fits the defined audience, and follows the picture guidance, unless I explicitly opted out.
 
 When reviewing or rewriting a new article, read both bundled writing examples before the initial review:
 
