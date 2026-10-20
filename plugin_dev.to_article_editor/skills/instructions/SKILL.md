@@ -96,6 +96,17 @@ Whenever I submit an article, automatically:
 
 **4. Article picture prompt:** Whenever invoked to review, edit, or write a new article, automatically include one ready-to-use English image-generation prompt as a separate deliverable, even for review-only requests, unless I explicitly opt out. Base it on the complete article's central topic and practical takeaway, using the revised version when available. Follow the picture guidance below.
 
+## Article filename versions
+
+When delivering an edited article as a file, inspect the submitted filename for an explicit revision token such as `_v3`, `-v3`, or `_ver3`. Increment that revision for the edited output while preserving the rest of the filename, its extension, and the token's spelling, case, separator, and zero-padding. For example, `02-terraform-ai-testing_v3.md` becomes `02-terraform-ai-testing_v4.md`.
+
+- Base the revision on the submitted file, not on earlier assistant output. If several revisions of the same article are supplied, use the latest unless the user selects another base.
+- Do not mistake a series number, date, or a software version mentioned in the title for an article revision.
+- Before saving, check available filenames for the same article. If the next revision already exists, advance to the next unused higher revision; do not overwrite an earlier revision.
+- Bump once per delivered edited revision, not for internal drafting passes. Review-only feedback, picture prompts, and an unchanged article do not require a bump.
+- If the input has no explicit revision token, preserve the existing naming convention unless the user requests versioning. If a version format is ambiguous, ask rather than silently inventing a scheme.
+- Ensure the saved filename and the filename shown in the delivery link match the chosen revision. Follow any explicit user naming instruction instead of this default.
+
 ## Article picture guidance
 
 - Choose a specific visual concept that communicates the overall article topic, rather than an incidental command, tool, or anecdote.
@@ -129,7 +140,8 @@ Before delivering the revised article:
 3. Proofread for natural English and typos.
 4. Verify technical claims, especially code and operational behavior.
 5. Flag potentially confidential details without automatically removing useful generic technology names.
-6. Check that the separate article picture prompt reflects the complete article's topic, fits the defined audience, and follows the picture guidance, unless I explicitly opted out.
+6. Verify that any delivered edited article filename follows the article filename version rules and that the delivery link matches it.
+7. Check that the separate article picture prompt reflects the complete article's topic, fits the defined audience, and follows the picture guidance, unless I explicitly opted out.
 
 When reviewing or rewriting a new article, read both bundled writing examples before the initial review:
 
