@@ -1,0 +1,32 @@
+{
+  "name": "allegro-scout",
+  "version": "0.2.0",
+  "description": "Allegro-first shopping assistant for known products and multi-item carts: shortlist real offers, compare delivered totals, ETA and seller confidence with minimal user effort.",
+  "author": {
+    "name": "Ivan Ivanov",
+    "email": "vi7alya@gmail.com"
+  },
+  "keywords": [
+    "allegro",
+    "poland",
+    "shopping",
+    "basket",
+    "price comparison",
+    "delivery",
+    "cart optimization"
+  ],
+  "interface": {
+    "displayName": "AllegroScout",
+    "shortDescription": "Оптимизация покупок Allegro",
+    "longDescription": "Find and compare offers on Allegro.pl for specific items or a shopping list. Optimize the total basket cost after shipping, delivery speed, seller reliability and product fit. Uses available chat web/search tools rather than a direct Allegro API connection. Never claims live inventory, Smart eligibility or verified checkout prices without evidence. Does not buy or access the user's Allegro account.",
+    "developerName": "Ivan Ivanov",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Найди на Allegro эти товары и предложи оптимальную корзину с учётом доставки и отзывов.",
+      "Найди лучшую оферту на Allegro для конкретного товара по полной цене с доставкой.",
+      "Znajdź te produkty na Allegro i zoptymalizuj koszyk, dostawę i wiarygodność sprzedawców."
+    ]
+  },
+  "skills": "./skills"
+}
