@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "author": {
-    "email": "vi7alya@gmail.com",
-    "name": "Ivan Ivanov"
+    "name": "Ivan Ivanov",
+    "email": "vi7alya@gmail.com"
   },
   "description": "Independent, evidence-based equipment buying research, Polish-market price comparison, ownership-cost analysis, and adversarial review of product shortlists.",
   "extensions": {
@@ -33,5 +33,5 @@
     "critical-review"
   ],
   "name": "gearscout",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }
